@@ -26,7 +26,7 @@ const ShoppingListService = {
         return knex
             .from('shopping_list')
             .where({ id })
-            .delete()
+            .delete();
     }
 }
 
