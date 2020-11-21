@@ -1,5 +1,6 @@
 require('dotenv').config();
 const knex = require('knex');
+const ShoppingListService = require('./shopping-list-service');
 
 const knexInstance = knex({
     client: 'pg',
@@ -50,7 +51,3 @@ function totalCostForCategories() {
         })
 }
 
-searchTermQuery('urger');
-paginateTable(2);
-itemsAddedAfterDate(5);
-totalCostForCategories();
